@@ -1,0 +1,36 @@
+Questions I should ask for selecting an algorithm.
+	  - How much data is to be sorted?
+	   * For large data sets worst-case bounds vary. It's important to select an algorithm that performs acceptable on the largest data sets that the code may encounter.
+	  - Does the data fit in memory?
+	   * Many sorting algorithms are efficient only when they reside in memory. If a dataset is too large to fit in memory it is better to split into smaller data sets for sorting and then combining these smaller sets.
+	     
+	  - Is the data mostly sorted?
+	    * Adding new data to a sorted list can be done efficiently with some alogrithms. Those same algorithms can perfrom poorly with randomly ordered data.
+
+	  - How much additional memory does the algorithm need?
+	    * in-place sorting alogrithms sorts data without using the memory. i.e. swaping elements in an array. If memory is import it is best to use an in-place algorithm.
+	  - Is relative order perserved?
+	   * stable sorting algorithm perserves relative order of an alogrithm. 
+
+
+
+- Selection Sort
+  - Steps: Select first element (n), scan through rest of the elements(n+1...) to find minimum element, then swap with that first element k. Now go to next element and make it n.  
+  - Typical implementations are not stable; to make stable, insert instead of swap.
+  - In-place algorithm, B/A/W = O(n^2)
+
+
+- Insertion Sort
+  - Everything to the left of a position is less than it. Take new element and compare it to the already sorted list.
+  - It is a stable algorithm and works in-place. B=O(n) A/W = O(n^2)
+
+- Quicksort
+  - Divide and conquer alogrithm. Select a pivot value, split set, everything less is to the left of pivot, everythign to right, is greater, then split the new subsets. Pivot is very important.
+  - Most implementations are not stable and do not work in-place. B/A = O(n log (n)) W = O(n^2).
+
+Merge Sort
+   - Works by spliting a data set into two or more subsets, sorting these subsets, and then merging them together into the final sorted set. Merge funciton is very important.
+   - Insertation sort is commonly used when the length of the array is less than a particular szie because it is normally has better performance in that case. Best to use wwhen items are particular too large to fit in memory.
+   - Typical implementations are stable but are not in-place
+   - B/A/W = O(n log (n))
+   - Not requires O(n) memory usage. 

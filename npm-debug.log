@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-',
+1 verbose cli   '@angular/cli' ]
+2 info using npm@3.8.2
+3 info using node@v4.4.1
+4 verbose config Skipping project config: /Users/robert/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData -
+9 silly fetchPackageMetaData @angular/cli
+10 silly fetchOtherPackageData -
+11 silly cache add args [ '-', null ]
+12 verbose cache add spec -
+13 silly fetchNamedPackageData @angular/cli
+14 silly mapToRegistry name @angular/cli
+15 silly mapToRegistry scope (from package name) @angular
+16 verbose mapToRegistry no registry URL found in name for scope @angular
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcli
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: '-',
+20 silly cache add   scope: null,
+20 silly cache add   name: null,
+20 silly cache add   rawSpec: '-',
+20 silly cache add   spec: '/Users/robert/Documents/Projects/Sorting and structures/-',
+20 silly cache add   type: 'local' }
+21 error addLocal Could not install /Users/robert/Documents/Projects/Sorting and structures/-
+22 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/robert/Documents/Projects/Sorting and structures/-'
+22 silly fetchPackageMetaData     at Error (native)
+22 silly fetchPackageMetaData  error for - { [Error: ENOENT: no such file or directory, open '/Users/robert/Documents/Projects/Sorting and structures/-']
+22 silly fetchPackageMetaData   errno: -2,
+22 silly fetchPackageMetaData   code: 'ENOENT',
+22 silly fetchPackageMetaData   syscall: 'open',
+22 silly fetchPackageMetaData   path: '/Users/robert/Documents/Projects/Sorting and structures/-' }
+23 verbose request uri https://registry.npmjs.org/@angular%2fcli
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 9:50:43 AM
+26 verbose request id e18f507e9e2dd8f6
+27 http request GET https://registry.npmjs.org/@angular%2fcli
+28 http 200 https://registry.npmjs.org/@angular%2fcli
+29 verbose headers { date: 'Sat, 06 Oct 2018 13:50:43 GMT',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'transfer-encoding': 'chunked',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'set-cookie': [ '__cfduid=de11d3a4a5da4ef2de7144752348e62a51538833843; expires=Sun, 06-Oct-19 13:50:43 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'cache-control': 'public, max-age=300',
+29 verbose headers   'cf-ray': '465899420ce946f8-EWR',
+29 verbose headers   etag: 'W/"d800ea0dbc44c6d88e402783a84f86e0"',
+29 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 verbose headers   'last-modified': 'Fri, 05 Oct 2018 22:08:50 GMT',
+29 verbose headers   vary: 'Accept-Encoding',
+29 verbose headers   'x-amz-meta-rev': '326-5c15d4ef244d8f9c75d080b9009751c9',
+29 verbose headers   server: 'cloudflare',
+29 verbose headers   'content-encoding': 'gzip' }
+30 silly get cb [ 200,
+30 silly get   { date: 'Sat, 06 Oct 2018 13:50:43 GMT',
+30 silly get     'content-type': 'application/json',
+30 silly get     'transfer-encoding': 'chunked',
+30 silly get     connection: 'keep-alive',
+30 silly get     'set-cookie': [ '__cfduid=de11d3a4a5da4ef2de7144752348e62a51538833843; expires=Sun, 06-Oct-19 13:50:43 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'cache-control': 'public, max-age=300',
+30 silly get     'cf-ray': '465899420ce946f8-EWR',
+30 silly get     etag: 'W/"d800ea0dbc44c6d88e402783a84f86e0"',
+30 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+30 silly get     'last-modified': 'Fri, 05 Oct 2018 22:08:50 GMT',
+30 silly get     vary: 'Accept-Encoding',
+30 silly get     'x-amz-meta-rev': '326-5c15d4ef244d8f9c75d080b9009751c9',
+30 silly get     server: 'cloudflare',
+30 silly get     'content-encoding': 'gzip' } ]
+31 verbose get saving @angular/cli to /Users/robert/.npm/registry.npmjs.org/_40angular_252fcli/.cache.json
+32 verbose correctMkdir /Users/robert/.npm correctMkdir not in flight; initializing
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Starting
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: ENOENT: no such file or directory, open '/Users/robert/Documents/Projects/Sorting and structures/-'
+38 verbose stack     at Error (native)
+39 verbose cwd /Users/robert/Documents/Projects/Sorting and structures
+40 error Darwin 17.7.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-" "@angular/cli"
+42 error node v4.4.1
+43 error npm  v3.8.2
+44 error path /Users/robert/Documents/Projects/Sorting and structures/-
+45 error code ENOENT
+46 error errno -2
+47 error syscall open
+48 error enoent ENOENT: no such file or directory, open '/Users/robert/Documents/Projects/Sorting and structures/-'
+49 error enoent ENOENT: no such file or directory, open '/Users/robert/Documents/Projects/Sorting and structures/-'
+49 error enoent This is most likely not a problem with npm itself
+49 error enoent and is related to npm not being able to find a file.
+50 verbose exit [ -2, true ]
